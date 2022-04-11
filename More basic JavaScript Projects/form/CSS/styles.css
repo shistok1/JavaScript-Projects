@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+}
+
+#form {
+    padding: 2%;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    background-color:white;
+    font-family: Sans-serif;
+    font-weight: bolder;
+    text-shadow: 1px 1px gray;
+}
+
+input[type=text] {
+    width: 92%;
+    padding: 1%;
+    margin: 2%;
+    box-sizing: border-box;
+    border-radius: 2%;
+    border-width: 10px;
+    font-family: Sans-serif;
+    font-weight: bolder;
+    text-shadow: 1px 1px gray;
+}
+
+button {
+    width: 40%;
+    padding: 1%;
+    margin: 2%;
+    box-sizing: border-box;
+    border-radius: 2%;
+    border-width: 10px;
+    font-family: Sans-serif;
+    font-weight: bolder;
+    text-shadow: 1px 1px gray;
+}
