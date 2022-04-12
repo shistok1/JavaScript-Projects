@@ -57,17 +57,17 @@ button:hover {
     background-color: lightgray;
 }
 
-.allClearFunction {
+.allClear {
     background-color: red;
     border-color: darkslategray;
     color: #fff;
 }
 
-.allClearFunction:hover {
+.allClear:hover {
     background-color: darkred;
 }
 
-.equalSignOperator {
+.equalSign {
     background-color: blue;
     border-color: darkslategray;
     color: #fff;
@@ -75,7 +75,7 @@ button:hover {
     grid-area: 2/4/6/5; 
 }
 
-.equalSignOperator:hover {
+.equalSign:hover {
     background-color: darkblue;
 }
 

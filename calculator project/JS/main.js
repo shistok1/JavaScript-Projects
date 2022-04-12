@@ -3,12 +3,12 @@ const calculator = {
 };
 
 function inputDigit(digit) {
-    var {displayValue, waitSecondOperand} = calculator;
+    const {displayValue, waitSecondOperand} = calculator;
     if (waitSecondOperand === true) {
         calculator.displayValue = digit;
         calculator.waitSecondOperand = false;
     } else {
-        calculator.displayValue = displayValue === '0' ? digit : displayValue = digit;
+        calculator.displayValue = displayValue === '0' ? digit : displayValue + digit;
     }
 }
 
@@ -32,7 +32,7 @@ function handleOperator(nextOperator) {
         const valueNow = firstOperand || 0;
         let result = performCalculation[operator](valueNow, valueOfInput);
         result = Number(result).toFixed(9);
-        result = (result * 1).toString()
+        result = (result * 1).toString();
         calculator.displayValue = parseFloat(result);
         calculator.firstOperand = parseFloat(result);
     }
@@ -55,13 +55,13 @@ function calculatorReset() {
 }
 
 function updateDisplay() {
-    var display = document.querySelector(".calculatorScreen");
+    const display = document.querySelector(".calculatorScreen");
     display.value = calculator.displayValue;
 }
 updateDisplay();
-var keys = document.querySelector(".calculatorKeys");
+const keys = document.querySelector(".calculatorKeys");
 keys.addEventListener("click", (event) => {
-    var {target} = event;
+    const {target} = event;
     if (!target.matches("button")) {
         return;
     }
@@ -73,6 +73,7 @@ keys.addEventListener("click", (event) => {
     if (target.classList.contains("decimal")) {
         inputDecimal(target.value);
         updateDisplay();
+        return;
     }
     if (target.classList.contains("allClear")) {
         calculatorReset();
