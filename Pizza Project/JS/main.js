@@ -25,7 +25,7 @@ function getReceipt() {
     console.log("size text1: "+text1);
     console.log("subtotal: $"+runningTotal+".00");
     getTopping(runningTotal,text1);
-};
+}
 
 function getTopping(runningTotal,text1) {
     var toppingTotal = 0;
@@ -51,4 +51,4 @@ function getTopping(runningTotal,text1) {
     console.log("purchase total: "+"$"+runningTotal+".00");
     document.getElementById("showText").innerHTML = text1;
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
-};
+}
