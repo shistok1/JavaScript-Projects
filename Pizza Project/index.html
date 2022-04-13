@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+    <title>Pizza Drill Demo</title>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <script defer src="./JS/main.js"></script>
+    <link rel="stylesheet" href="./CSS/styles.css"/>
+  </head>
+  
+	<body>
+		<div id="menuBG">
+			<h1 style="margin: 0 0px 0 20px;">Pizza Drill Tutorial</h1>
+      <input id="btnOrder" type="button" onclick="getReceipt()" value="place order">
+      <form id="frmMenu">
+        <div class="menu left">
+            <h3>Size:</h3>
+            <div id="left">
+                <input class="size" type="radio" name="size" value="Personal Pizza">Personal Pizza<br>
+                            <input class="size" type="radio" name="size" value="Small Pizza">Small Pizza<br>
+                            <input class="size" type="radio" name="size" value="Medium Pizza">Medium Pizza<br>
+                <input class="size" type="radio" name="size" value="Large Pizza">Large Pizza<br>
+                <input class="size" type="radio" name="size" value="Extra Large Pizza">Extra <Large></Large> Pizza<br>
+            </div>
+        </div>
+        <div class="menu right">
+            <h3>Meats:</h3>
+            <div id="right">
+                <input class="toppings" type="checkbox" name="topping" value="Pepperoni">Pepperoni<br>
+                <input class="toppings" type="checkbox" name="topping" value="Sausage">Sausage<br>
+                <input class="toppings" type="checkbox" name="topping" value="Canadian bacon">Canadian Bacon<br>
+                <input class="toppings" type="checkbox" name="topping" value="Ground beef">Ground Beef<br>
+                <input class="toppings" type="checkbox" name="topping" value="Anchovy">Anchovy<br>
+                <input class="toppings" type="checkbox" name="topping" value="Chicken">Chicken<br>
+            </div>
+        </div>
+        <div id="cart">
+          <div id="showText"></div>
+          <div id="totalPrice"></div>
+        </div>
+      </form>
+    </div>
+  </body>
+
+</html>
