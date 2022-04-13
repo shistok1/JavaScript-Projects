@@ -62,6 +62,7 @@ font-family: Sans-serif;
   height: 190px;
   margin: 0px auto;
   float: left;
+	text-align: center;
 }
 
 #cart {
@@ -73,7 +74,7 @@ font-family: Sans-serif;
 
 #btnOrder {
   position: absolute;
-  top: 12%;
+  top: 17%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100px;
@@ -85,6 +86,6 @@ div {
 	background-color: red;
 }
 
-#showText {
-    text-align: center;
+#sizes {
+	margin-left: 33%;
 }
